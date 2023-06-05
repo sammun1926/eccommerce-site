@@ -1,5 +1,12 @@
 class Review < ActiveRecord::Base
-    belongs_to :product
-    belongs_to :user
+    # ...
+  
+    def user
+      User.find(user_id)
+    end
+  
+    def product
+      Product.find(product_id)
+    end
   end
   
