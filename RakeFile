@@ -1,0 +1,7 @@
+namespace :db do
+    task :create do
+      # Database creation logic here
+    end
+  end
+  
+  
